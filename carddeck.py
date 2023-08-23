@@ -2,7 +2,7 @@ from dataclasses import dataclass
 import random
 # in Java, 'self', would be 'this'
 
-@dataclass
+@dataclass  # decorator
 class Card:
     rank: str
     suit: str

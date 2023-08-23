@@ -1,7 +1,7 @@
 from datetime import date
 
 
-class President():
+class President:
     def __init__(self, index):
         self._get_data(index)
 
