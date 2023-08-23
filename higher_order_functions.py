@@ -6,7 +6,7 @@ def doit(f):
 def hello():
     print("Hello, world")
 
-doit(hello)
+doit(hello)   # hello is callback, AKA predicate
 
 fruits = ['pomegranate', 'cherry', 'apricot', 'Apple',
 'lemon', 'Kiwi', 'ORANGE', 'lime', 'Watermelon', 'guava', 
@@ -77,3 +77,5 @@ for item in sorted(data.items(), key=mysort):
     print(item)
 print()
 
+print(f"dir(airports): {dir(airports)}\n")
+print(f"airports.items(): {airports.items()}\n")
