@@ -12,10 +12,10 @@ class StringKeyDict(dict):  # Create class that inherits from dict
 
 if __name__ == '__main__':
     d = StringKeyDict(a=10, b=20)   # Create and initialize StringKeyDict instance
-    for k, v in [('c', 30), ('d', 40), (1, 50), (('a', 1), 60), (5.6, 201)]:
+    for k, v in [('c', 30), ('m', 'mongoose'), ('d', 40), (1, 50), (('a', 1), 60), (5.6, 201), (['a', 'b'], ['c', 'd'])]:
         try:
             print("Setting {} to {}".format(k, v), end=' ')
-            d[k] = v   # Try to add various key/value pairs
+            d[k] = v   # Try to add various key/value pairs   d.__setitem__(k, v)
         except TypeError as err:
             print(err)  # Error raised on non-string key
         else:

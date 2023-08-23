@@ -1,5 +1,10 @@
 from collections import defaultdict
 
+def zero():
+    return 0
+
+dd = defaultdict(zero)  # create default dict with function that returns 0
+
 dd = defaultdict(lambda: 0)  # create default dict with function that returns 0
 
 dd['spam'] = 10  # assign some values to the dict
@@ -8,6 +13,7 @@ dd['eggs'] = 22
 print(dd['spam'])  # print values
 print(dd['eggs'])
 print(dd['foo'])  # missing key 'foo' invokes function and returns 0
+print(f"dd: {dd}")
 
 print('-' * 60)
 
@@ -17,6 +23,7 @@ fruits = ["pomegranate", "cherry", "apricot", "date", "apple",
 "elderberry", "peach", "blueberry", "lychee", "grape" ]
 
 fruit_info = defaultdict(list)
+# fruit_info = {}  WILL NOT WORK
 
 for fruit in fruits:
     first_letter = fruit[0]
@@ -24,4 +31,10 @@ for fruit in fruits:
 
 for letter, fruits in sorted(fruit_info.items()):
     print(letter, fruits)
+
+
+
+
+
+
 
