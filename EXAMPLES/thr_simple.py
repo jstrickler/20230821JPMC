@@ -20,3 +20,4 @@ for i in range(16):
     t = SimpleThread(i)  # create the thread
     t.start()  # launch the thread
 
+print("DONE")
