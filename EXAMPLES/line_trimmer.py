@@ -6,3 +6,6 @@ def trimmed(file_name):
 mary_in = trimmed('../DATA/mary.txt')
 for trimmed_line in mary_in:
     print(trimmed_line)
+print(f"type(mary_in): {type(mary_in)}")
+print(f"hasattr(mary_in,'__iter__'): {hasattr(mary_in,'__iter__')}")
+print(f"hasattr(mary_in, '__next__'): {hasattr(mary_in, '__next__')}")
