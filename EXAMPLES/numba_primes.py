@@ -1,4 +1,3 @@
-
 import numba
 
 @numba.jit() # All that's needed is to decorator the function -- numba does the rest

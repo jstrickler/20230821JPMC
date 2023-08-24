@@ -20,4 +20,4 @@ titles = (
 )
 
 for title in titles:
-    print(title_parser.parseString(title)[0])  # Parse the titles of of the string
+    print(title_parser.parseString(title))  # Parse the titles of of the string

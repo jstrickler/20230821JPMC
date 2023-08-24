@@ -18,6 +18,10 @@ class SimpleThread(threading.Thread):
     def run(self):  # function invoked by each thread
         time.sleep(random.randint(1, MAX_SLEEP_TIME))
 
+        # STDOUT_LOCK.acquire()
+        # # ...
+        # STDOUT_LOCK.release()
+
         with STDOUT_LOCK:  # acquire lock and release when finished
             print("Hello from thread {} ({})".format(self._num, self._word))
 
